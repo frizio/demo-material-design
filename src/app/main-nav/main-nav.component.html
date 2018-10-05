@@ -1,4 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
+  
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -13,6 +14,7 @@
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button
@@ -23,8 +25,14 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>demo-material-design</span>
+      <span class="spacer"></span>
+      Demo Material Design
+      <span class="spacer"></span>
+      <a mat-list-item href="#">Home</a>
+      <a mat-list-item href="#">About</a>
+      <a mat-list-item href="#">Login</a>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
