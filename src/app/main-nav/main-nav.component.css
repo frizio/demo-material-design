@@ -20,6 +20,10 @@
   margin: 0 20px;
 }
 
+.example-icon {
+  margin: 0 5px;
+}
+
 mat-toolbar a {
   display: inline-block;
   margin: 0 10px;
